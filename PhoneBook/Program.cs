@@ -22,6 +22,7 @@ class Program
         phoneBook.Add(new Contact("Сергей", "Брин", 799900000013, "serg@example.com"));
         phoneBook.Add(new Contact("Иннокентий", "Смоктуновский", 799900000013, "innokentii@example.com"));
 
+        // Сортировка по возрастанию, для сортировки по убыванию нужно использовать OrderByDescending и ThenByDescending в зависимости от потребности
         var sortPhoneBook = phoneBook
         .OrderBy(s => s.Name)
         .ThenBy(s => s.LastName);
